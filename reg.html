@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+  </head>
+  <body bgcolor="lightskyblue" style="padding: 0 50px;">
+    <u><h1 style="font-size: 250%; text-align: center; font-family: 'Times New Roman', Times, serif;">
+        Registration Form
+      </h1></u><br><br>
+    <h3><marquee behavior="scroll" height="50%" direction="left">Welcome to e-Ticketing System for contributing in eco friendly environment</marquee>
+      </h3>
+    <br><br>
+    <form>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <p style="text-align: left">
+            <label> Nationality : </label><br />
+            <input type="radio" name="indian" /> Indian
+            <input type="radio" name="foreigner" /> Foreigner <br />
+            </p>
+            <p>
+                <label> Gender : </label><br />
+                <input type="radio" name="Male" /> Male <br />
+                <input type="radio" name="Female" /> Female <br />
+                <input type="radio" name="Other" /> Other
+                <br />
+                <br />
+            </p>
+        </div>
+
+        <div>
+            
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" min="5" max="90" />
+            <br /><br />
+            <label> Phone : </label>
+            <input type="text" name="country code" value="+91" size="2" />
+            <input type="text" name="phone" size="10" /> <br />
+            <br />
+            Address
+            <br />
+            <textarea cols="80" rows="5" value="address"> </textarea>
+        </div>
+        </div>
+        <br><br>
+        <div>
+            Email:
+            <input type="email" id="email" name="email" /> <br />
+            <br />
+            <br />
+            Password:
+            <input type="Password" id="pass" name="pass" /> <br />
+            <br />
+
+            <button>SUBMIT</button> 
+        </div>
+    </form>
+    </body>
+  </body>
+</html>

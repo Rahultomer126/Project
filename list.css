@@ -1,0 +1,24 @@
+#sidebar1{
+    background-color: rgb(220, 220, 231);
+    min-height: 400px;
+    margin-right: 690x;
+    float: left;
+    width: 200px;
+}
+
+#sidebar2{
+    background-color: rgb(220, 220, 231);
+    min-height: 400px;
+    margin-right: 690x;
+    float: right;
+    width: 200px;
+}
+
+#sidebar3{
+    background-color: rgb(220, 220, 231);
+    min-height: 400px;
+    margin-right: 690x;
+    float: none;
+    width: 200px;
+    text-align: center;
+}
