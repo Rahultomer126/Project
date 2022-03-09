@@ -1,24 +1,31 @@
-#sidebar1{
-    background-color: rgb(220, 220, 231);
-    min-height: 400px;
-    margin-right: 690x;
-    float: left;
-    width: 200px;
+#sidebar1 {
+  background-color: rgb(220, 220, 231);
+  min-height: 400px;
+  margin-right: 0;
+  /* float: left; */
+  width: 30%;
 }
 
-#sidebar2{
-    background-color: rgb(220, 220, 231);
-    min-height: 400px;
-    margin-right: 690x;
-    float: right;
-    width: 200px;
+#sidebar2 {
+  background-color: rgb(220, 220, 231);
+  min-height: 400px;
+  margin-right: 0;
+  /* float: right; */
+  width: 30%;
 }
 
-#sidebar3{
-    background-color: rgb(220, 220, 231);
-    min-height: 400px;
-    margin-right: 690x;
-    float: none;
-    width: 200px;
-    text-align: center;
+#sidebar {
+  background-color: rgb(220, 220, 231);
+  min-height: 400px;
+  /* margin-right: 690x; */
+  /* float: none; */
+  width: 30%;
+  text-align: center;
+}
+
+.listMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: "center";
 }

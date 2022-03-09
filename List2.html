@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    // javascript
+
+    console.log("hello");
+    let fetchRes = fetch("http://localhost:5000");
+    let myMonuments;
+    // fetchRes
+    //   .then((res) => res.json())
+    //   .then((monuments) => {
+    //     myMonuments = monuments;
+    //   });
+
+    myMonuments = ["Qutub Minar", "Taj Mahal"];
+
+    document.getElementById("MonumentsList").innerHTML = "<h3>Hello</h3>";
+    // console.log("Monuments List", MonumentsList);
+    // MonumentsList.innerHTML = "<h3>Hello</h3>";
+  </script>
+  <body>
+    <div>
+      <h1>List of Monuments</h1>
+
+      <p id="MonumentsList"></p>
+    </div>
+  </body>
+</html>
+
+<!-- backend fetch monuments -->
