@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+
     <br>
     <img src="C:\Users\HP\Desktop\Project/Ministry of India Logo.png" alt="Ministry of India">
     <h1 style="font-family: 'Times New Roman', Times, serif; color: gold;"><b><u>e-Ticketing System</h1>
@@ -22,14 +27,14 @@
           </div>
         </div>
         <form class="login-form">
-          <input type="text" placeholder="username">
+          <input type="text" placeholder="email">
           <input type="password" placeholder="password">
-          <button>login</button>
-          <p class="message">Not registered? <a href="#">Create an account</a></p>
+          <button onClick="clickHandler()">login</button>
+          <p class="message">Not registered? <a href="reg.html">Create an account</a></p>
         </form>
       </div>
     </div>
-    <div id="main">
+    <div id="main" style="display: flex; justify-content: center;">
     <div class="container-fluid" style="margin-top:30px;
     float: left;
     width: 200px;">
@@ -66,5 +71,27 @@
             </div>
 
 </body>
+<script>
+function clickHandler(){
+    document.location = "/list.html"
+}
+
+</script>
+  <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "62231f24ba88b900073c897e";
+      (function () {
+        var be = document.createElement("script");
+        be.type = "text/javascript";
+        be.async = true;
+        be.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "cdn.chatbot.com/widget/plugin.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+
 </html>
 
