@@ -1,27 +1,32 @@
 #sidebar1 {
   background-color: rgb(220, 220, 231);
   min-height: 400px;
-  margin-right: 0;
-  /* float: left; */
-  width: 30%;
+  margin-right: 50px;
+  margin-top: 55px;
+  float: left; 
+  width: 33.33%;
+}
+label{
+  font-weight: bold;
 }
 
 #sidebar2 {
   background-color: rgb(220, 220, 231);
   min-height: 400px;
+  margin-top: 55px;
   margin-right: 0;
   /* float: right; */
-  width: 30%;
+  width: 33.33%;
 }
 
-#sidebar {
+/* #sidebar {
   background-color: rgb(220, 220, 231);
   min-height: 400px;
   /* margin-right: 690x; */
   /* float: none; */
-  width: 30%;
+  /* width: 33.33%;
   text-align: center;
-}
+} */ 
 
 .listMain {
   /* height: 100vh; */

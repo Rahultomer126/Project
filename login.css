@@ -6,6 +6,15 @@ header a img{
   width: 134px;
 margin-top: 4px;
 }
+#cb{
+  text-align: right;
+
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 300px;
+  height: 300px;
+}
 h1{
   text-align: center;
   color: #e6e358;
@@ -18,7 +27,7 @@ img{
   width: 130px;
   height: 130px;
   display:inline-flex;
-  position: absolute;
+  position:absolute;
 }
 .login-page {
   width: 360px;

@@ -1,0 +1,15 @@
+.main {
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: "center";
+  }
+  
+.foto{
+    float: 30%;
+}
+.if{
+    float: 70%;
+}
