@@ -9,70 +9,77 @@
     <link rel="stylesheet" href="all.css" />
   </head>
   <body>
-    <h1 style="text-align: center;">Monuments/Museum Lists</h1>
+    <h1 style="text-align: center">Monuments/Museum Lists</h1>
     <div class="listMain">
       <div id="sidebar1">
-        <h2 style="text-align: center;" >Select city</h2>
+        <h2 style="text-align: center">Select city</h2>
         <label> CITY : </label><br />
-        <input type="radio" name="delhi" /> Delhi<br />
-        <input type="radio" name="delhi" /> Jaipur <br />
-        <input type="radio" name="delhi" /> Chandigarh<br />
-        <input type="radio" name="delhi" /> Bangalore <br />
-        <input type="radio" name="delhi" /> Mumbai<br />
-        <br />
+        <form>
+          <input type="radio" name="delhi" onclick="show(`delhi`);" />
+          Delhi<br />
+          <input type="radio" name="jaipur" onclick="show(`jaipur`);" /> Jaipur
+          <br />
+          <input type="radio" name="chandigarh" onclick="show(`chandigarh`);" />
+          Chandigarh<br />
+          <input type="radio" name="bangalore" onclick="show(`bangalore`);" />
+          Bangalore <br />
+          <input type="radio" name="mumbai" onclick="show(`mumbai`);" />
+          Mumbai<br />
+          <br />
+        </form>
+        <!-- <button onclick="()=>{}">Show</button> -->
       </div>
 
       <br />
-    
+
       <div id="sidebar2">
-        <h2 style="text-align: center;">Select Monuments/Museum</h2>
-        <label> Delhi : </label><br />
-        <input type="radio" name="Abc" /> Humayuns Tomb<br />
-        <input type="radio" name="Abc" /> Hauzkhas<br />
-        <input type="radio" name="Abc" /> Red Fort<br />
-        <br />
+        <h2 style="text-align: center">Select Monuments/Museum</h2>
+        <div id="delhi" class="hide">
+          <label> Delhi : </label><br />
+          <input type="radio" name="Abc" /> Humayuns Tomb<br />
+          <input type="radio" name="Abc" /> Hauzkhas<br />
+          <input type="radio" name="Abc" /> Red Fort<br />
+          <br />
+        </div>
+        <div id="jaipur" class="hide">
+          <label> Jaipur : </label><br />
+          <input type="radio" name=" rh" /> Ancient Site,Bhangarh<br />
+          <input type="radio" name=" rh" /> Baori At Abhaneri <br />
+          <input type="radio" name=" rh" /> Deeg Bhawan<br />
 
-        <label> Jaipur : </label><br />
-        <input type="radio" name=" rh" /> Ancient Site,Bhangarh<br />
-        <input type="radio" name=" rh" /> Baori At Abhaneri <br />
-        <input type="radio" name=" rh" /> Deeg Bhawan<br />
-
-        <br />
-
-        <label> Chandigarh : </label><br />
-        <input type="radio" name="an" />Archaeological Site Museum, Ropar<br />
-        <input type="radio" name="an" />Sheikh Chilli’S Tomb<br />
-        <input type="radio" name="an" />Suraj Kund<br />
-        <br />
-        <label> Bangalore : </label><br />
-        <input type="radio" name="al" />Archaeological Museum, Halebidu<br />
-        <input type="radio"name=" al"/>Keshava Temple, Somanathpur<br />
-        <input type="radio" name="al" />Palace Of Tipu Sultan, Bengaluru<br />
-        <br />
-        <label> Mumbai : </label><br />
-        <input type="radio" name="al" />Aga Khan Palace Building, Pune<br />
-        <input type="radio" name="al" />Cave, Temple & Inscriptions, Bhaja<br />
-        <input type="radio" name="al" />Kolaba Fort, Alibag<br />
-        <br />
+          <br />
+        </div>
+        <div id="chandigarh" class="hide">
+          <label> Chandigarh : </label><br />
+          <input type="radio" name="an" />Archaeological Site Museum, Ropar<br />
+          <input type="radio" name="an" />Sheikh Chilli’S Tomb<br />
+          <input type="radio" name="an" />Suraj Kund<br />
+          <br />
+        </div>
+        <div id="bangalore" class="hide">
+          <label> Bangalore : </label><br />
+          <input type="radio" name="al" />Archaeological Museum, Halebidu<br />
+          <input type="radio" name=" al" />Keshava Temple, Somanathpur<br />
+          <input type="radio" name="al" />Palace Of Tipu Sultan, Bengaluru<br />
+          <br />
+        </div>
+        <div id="mumbai" class="hide">
+          <label> Mumbai : </label><br />
+          <input type="radio" name="al" />Aga Khan Palace Building, Pune<br />
+          <input type="radio" name="al" />Cave, Temple & Inscriptions, Bhaja<br />
+          <input type="radio" name="al" />Kolaba Fort, Alibag<br />
+          <br />
+        </div>
       </div>
     </div>
-    <br>
-    <p style="text-align: center;"><button><a href="info.html">Next</a></button></p>
+    <br />
+    <p style="text-align: center">
+      <button><a href="info.html">Next</a></button>
+    </p>
   </body>
-  <!-- Start of ChatBot (www.chatbot.com) code -->
-  <script type="text/javascript">
-    window.__be = window.__be || {};
-    window.__be.id = "622a3b95be2e410007ca0a53";
-    (function () {
-      var be = document.createElement("script");
-      be.type = "text/javascript";
-      be.async = true;
-      be.src =
-        ("https:" == document.location.protocol ? "https://" : "http://") +
-        "cdn.chatbot.com/widget/plugin.js";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(be, s);
-    })();
+  <script>
+    function show(id) {
+      document.getElementById(id).classList.add("show");
+    }
   </script>
-  <!-- End of ChatBot code -->
 </html>
