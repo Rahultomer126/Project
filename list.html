@@ -15,15 +15,15 @@
         <h2 style="text-align: center">Select city</h2>
         <label> CITY : </label><br />
         <form>
-          <input type="radio" name="delhi" onclick="show(`delhi`);" />
+          <input type="radio" name="d" onclick="show(`delhi`);" />
           Delhi<br />
-          <input type="radio" name="jaipur" onclick="show(`jaipur`);" /> Jaipur
+          <input type="radio" name="d" onclick="show(`jaipur`);" /> Jaipur
           <br />
-          <input type="radio" name="chandigarh" onclick="show(`chandigarh`);" />
+          <input type="radio" name="d" onclick="show(`chandigarh`);" />
           Chandigarh<br />
-          <input type="radio" name="bangalore" onclick="show(`bangalore`);" />
+          <input type="radio" name="d" onclick="show(`bangalore`);" />
           Bangalore <br />
-          <input type="radio" name="mumbai" onclick="show(`mumbai`);" />
+          <input type="radio" name="d" onclick="show(`mumbai`);" />
           Mumbai<br />
           <br />
         </form>
@@ -74,23 +74,40 @@
     </div>
     <br />
     <p style="text-align: center">
-      <button><a href="C:\Users\HP\Desktop\new\Project\infoPageSlideShow.html">Next</a></button>
+      <button>
+        <a href="C:\Users\HP\Desktop\new\Project\infoPageSlideShow.html"
+          >Next</a
+        >
+      </button>
     </p>
     <!-- Start of ChatBot (www.chatbot.com) code -->
-<script type="text/javascript">
-  window.__be = window.__be || {};
-  window.__be.id = "622c4ff52426e4000799c7b9";
-  (function() {
-      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-  })();
-</script>
-<!-- End of ChatBot code -->
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "622c4ff52426e4000799c7b9";
+      (function () {
+        var be = document.createElement("script");
+        be.type = "text/javascript";
+        be.async = true;
+        be.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "cdn.chatbot.com/widget/plugin.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+    <!-- End of ChatBot code -->
   </body>
   <script>
+    var count = 0;
+    var previous;
     function show(id) {
-      document.getElementById(id).classList.add("show");
+      if (count === 0) {
+      } else {
+        document.getElementById(previous).style.display = "none";
+      }
+      previous = id;
+      document.getElementById(id).style.display = "block";
+      count++;
     }
   </script>
 </html>

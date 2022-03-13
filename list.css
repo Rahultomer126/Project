@@ -35,9 +35,3 @@ label {
   justify-content: center;
   align-items: "center";
 }
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
