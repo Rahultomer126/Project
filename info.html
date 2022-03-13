@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="info.css" />
   </head>
   <style>
+    label {
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: none;
+      margin-right: 2em;
+      /* background-color: rgba(255, 83, 52, 0.616); */
+      /* display: flex; */
+      /* flex-direction: "column"; */
+    }
+    li {
+      /* padding: auto 0; */
+      padding: auto;
+      color: black;
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+      font-size: jj;
+      height: 6em;
+      border: 1px solid grey;
+    }
+    li:hover {
+      color: white;
+      background-color: #16be5ce1;
+      cursor: pointer;
+    }
+    .selected {
+      color: white;
+      background-color: #16be5ce1;
+      cursor: pointer;
+    }
+  </style>
+
+  <style>
     * {
       box-sizing: border-box;
       /* background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCBoo2veVy95iLQNvJOn3RqYCILQJ609TBA&usqp=CAU"; */
@@ -161,7 +195,64 @@
   </style>
   <body>
     <iframe width="100%" height="80" src="Header.html"></iframe>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-evenly"
+    >
+      <div class="sidebar" style="flex: 1">
+        <ul>
+          <li><p>Taj Mahal</p></li>
+          <li><p>Qutub Minar</p></li>
+          <li class="selected"><p>Bhangarh Fort</p></li>
+          <li><p>Humayun's Tomb</p></li>
+          <li><p>Red Fort</p></li>
+        </ul>
+      </div>
+      <div class="infoWrapper" style="flex: 3">
+        <div
+          class="info"
+          style="display: flex; height: 100%; flex-direction: row"
+        >
+          <div class="infoLeft" style="flex: 1; padding: 1.5em 0">
+            <img
+              src="https://static.toiimg.com/photo/msid-85978002,width-96,height-65.cms"
+              height="80%"
+              width="100%"
+              style="padding: auto"
+            />
+          </div>
+          <div
+            class="infoRight"
+            style="
+              flex: 2;
+              padding-left: 2em;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <h1>Bhangarh Fort</h1>
 
+            <p style="font-size: 23px">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+              sequi? Soluta provident debitis ea reiciendis accusamus pariatur
+              esse, maiores obcaecati facere eius impedit nesciunt sint ratione
+              ab repellat aut odio explicabo numquam rerum amet culpa blanditiis
+              unde molestiae repudiandae! Fugiat quod debitis optio repellendus
+              possimus natus architecto ea harum nisi.
+            </p>
+            <div style="display: flex; flex-direction: row">
+              <div>
+                <label>Ticket Price</label>
+                <label>Adults: 100Rs &nbsp;&nbsp; Children: 50Rs</label>
+              </div>
+            </div>
+            <button>Book Ticket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 style="color: black; text-align: center">Explore More</h1>
     <!-- Slideshow container -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
@@ -174,7 +265,14 @@
         />
         <div class="text" style="">
           <h2>Bhangarh Fort</h2>
-          Bhangarh is perhaps one of India’s most haunted locations. It is in Rajasthan and even the government has declared it an unsafe place to visit at night. India’s Archeological Survey or ASI body also placed a sign outside of Bhangarh Fort to warn visitors and locals alike not to reach their premises after sunset and before sunrise. While the government does not freely recognise the existence of any supernatural force here, the board says it all and is ample proof that there exists something that is not to be played with.
+          Bhangarh is perhaps one of India’s most haunted locations. It is in
+          Rajasthan and even the government has declared it an unsafe place to
+          visit at night. India’s Archeological Survey or ASI body also placed a
+          sign outside of Bhangarh Fort to warn visitors and locals alike not to
+          reach their premises after sunset and before sunrise. While the
+          government does not freely recognise the existence of any supernatural
+          force here, the board says it all and is ample proof that there exists
+          something that is not to be played with.
         </div>
       </div>
 
@@ -187,7 +285,18 @@
         />
         <div class="text">
           <h2>Qutub Minar</h2>
-          Qutub Minar has always been shrouded in mysteries galore and conflicting views. According to historians the minaret was named after Qutb-ud-din Aibak, responsible for erecting the monument while some others opine that it was named after Khwaja Qutb-ud-din Bakhtiar Kaki, who was a saint from Baghdad held in high regard by Iltutmish. The Alai Minar was to be the tallest tower in the world twice the size of Qutub Minar envisioned by Alauddin Khilji but post his death his ambitions were never carried on by anyone. Today Alai Minar stands at 27 metres to the north of Quwwat-ul-Islam Mosque and Qutub Minar. One of the last remaining monuments depicting the Afghan-styled architecture, Qutub Minar was inspired by the Minaret of Jam in Afghanistan.
+          Qutub Minar has always been shrouded in mysteries galore and
+          conflicting views. According to historians the minaret was named after
+          Qutb-ud-din Aibak, responsible for erecting the monument while some
+          others opine that it was named after Khwaja Qutb-ud-din Bakhtiar Kaki,
+          who was a saint from Baghdad held in high regard by Iltutmish. The
+          Alai Minar was to be the tallest tower in the world twice the size of
+          Qutub Minar envisioned by Alauddin Khilji but post his death his
+          ambitions were never carried on by anyone. Today Alai Minar stands at
+          27 metres to the north of Quwwat-ul-Islam Mosque and Qutub Minar. One
+          of the last remaining monuments depicting the Afghan-styled
+          architecture, Qutub Minar was inspired by the Minaret of Jam in
+          Afghanistan.
         </div>
       </div>
 
@@ -195,12 +304,23 @@
         <div class="numbertext">3 / 3</div>
         <img
           class="slideshowImage"
-          src="https://drive.google.com/uc?export=view&id=1ur_sgE2zqB1nQslF6hJiLXDMvJANZzBK"
+          src="https://drive.google.com/uc?export=view&id=1Ooy_nNMKpHAJftQwwg-3u6S0h9LtPS_Q"
           style="width: 100%"
         />
         <div class="text">
           <h2>Taj Mahal</h2>
-          The Taj Mahal was built by Mughal Emperor, Shah Jahan, in the memory of his wife Mumtaz Mahal who died in 1631 while giving birth to their 14th child. Mumtaz, Shah Jahan’s third wife, was known for her exceptional beauty, and the emperor was known to be mad about her. Crestfallen by her sudden death, the emperor, it is believed, turned grey-haired in just one night. Work on the Taj began in 1632, but it wasn’t until 1653 that the whole monument came together in its current form. But as fate would have it, soon after the Taj was built Shah Jahan was overthrown by his son Aurangazeb who held him prisoner in the Agra Fort, where he spent the rest of his years yearning for the Taj. Shah Jahan after his death in 1666 was buried beside his beloved Mumtaz in the Taj Mahal.
+          The Taj Mahal was built by Mughal Emperor, Shah Jahan, in the memory
+          of his wife Mumtaz Mahal who died in 1631 while giving birth to their
+          14th child. Mumtaz, Shah Jahan’s third wife, was known for her
+          exceptional beauty, and the emperor was known to be mad about her.
+          Crestfallen by her sudden death, the emperor, it is believed, turned
+          grey-haired in just one night. Work on the Taj began in 1632, but it
+          wasn’t until 1653 that the whole monument came together in its current
+          form. But as fate would have it, soon after the Taj was built Shah
+          Jahan was overthrown by his son Aurangazeb who held him prisoner in
+          the Agra Fort, where he spent the rest of his years yearning for the
+          Taj. Shah Jahan after his death in 1666 was buried beside his beloved
+          Mumtaz in the Taj Mahal.
         </div>
       </div>
 
@@ -320,6 +440,12 @@
       <button><a href="Booking.html">Buy Ticket</a></button>
       <br />
     </div>
+    <iframe
+      src="Footer.html"
+      width="100%"
+      height="600"
+      style="border: 0"
+    ></iframe>
   </body>
   <script>
     var slideIndex = 3;
